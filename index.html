@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Техномарт</title>
+    <title>Каталог товаров</title>
   </head>
 
   <body>
@@ -13,9 +13,9 @@
 
       <div class="header-user">
         <span class="logo">Техномарт</span>
-        <span class="header-search">Поиск</span>
-        <a class="header-bookmarks" href=#>Закладки: 0</a>
-        <a class="header-basket" href=#>Корзина: 0</a>
+        <button class="header-user search" type="button">Поиск</button>
+        <a class="header-user bookmarks" href=#>Закладки: 0</a>
+        <a class="header-user basket" href=#>Корзина: 0</a>
         <a class="btn order" href=#>Оформить заказ</a>
       </div>
 
@@ -34,8 +34,8 @@
 
         <div class="user-navigation">
           <ul>
-            <li class="login-in"><a href=#>Войти</a></li>
-            <li class="login-registration"><a href=#>Регистрация</a></li>
+            <li class="user-navigation login"><a href=#>Войти</a></li>
+            <li class="user-navigation registration"><a href=#>Регистрация</a></li>
           </ul>
         </div>
 
@@ -74,7 +74,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a href=#>Подробнее о компании</a>
+          <a class="btn about-company" href=#>Подробнее о компании</a>
         </div>
 
         <div class="contacts">
@@ -82,7 +82,12 @@
           <p>
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
+          <img src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, Большая Конюшенная ул, 19/18">
+
+
+
           <button type="button">Заблудились? Напишите нам!</button>
+
         </div>
 
       </section>
@@ -144,6 +149,39 @@
       </div>
 
     </footer>
+
+     <!--POPUP-------------------------------------------->
+
+     <div class="popup map">
+       <img src="img/map-big.svg" alt="г. Санкт-Петербург, Большая Конюшенная ул, 19/18">
+       <button class="modal-close" type="button">
+         Закрыть
+       </button>
+     </div>
+
+
+    <div class="popup write-us">
+      <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+        <p class="form-write-us-item">
+          <label for="form-write-name">Ваше имя:</label>
+          <input type="text" id="form-write-name" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="form-write-us-item">
+          <label for="form-write-email">Ваш e-mail:</label>
+          <input type="text" id="form-write-email" name="email" value="" placeholder="email@example.com">
+        </p>
+        <p class="form-write-us-item">
+          <label for="form-write-text">Текст письма:</label>
+          <textarea id="form-write-text" name="text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+
+      </form>
+
+      <button class="modal-close" type="button">
+        Закрыть
+      </button>
+    </div>
 
   </body>
 </html>

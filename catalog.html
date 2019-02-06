@@ -13,18 +13,18 @@
 
       <div class="header-user">
         <span class="logo">Техномарт</span>
-        <span class="header-search">Поиск</span>
-        <a class="header-bookmarks" href=#>Закладки: 0</a>
-        <a class="header-basket" href=#>Корзина: 0</a>
+        <button class="header-user search" type="button">Поиск</button>
+        <a class="header-user bookmarks" href=#>Закладки: 0</a>
+        <a class="header-user basket" href=#>Корзина: 10</a>
         <a class="btn order" href=#>Оформить заказ</a>
       </div>
 
       <div class="header-information">
         <div class="slogan">
-          <h1>
+          <p>
           Интернет-магазин строительных материалов
           и инструментов для ремонта
-          </h1>
+          </p>
         </div>
 
         <div class="address">
@@ -32,10 +32,11 @@
           <p>г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
         </div>
 
-        <div class="user-navigation">
+        <div class="user-navigation name">
+          <span>Равшан Джамутович</span>
           <ul>
-            <li class="login-in"><a href=#>Войти</a></li>
-            <li class="login-registration"><a href=#>Регистрация</a></li>
+            <li class="user-navigation order"><a href=#>Мои заказы</a></li>
+            <li class="user-navigation personal-account"><a href=#>Личный кабинет</a></li>
           </ul>
         </div>
 
@@ -68,7 +69,52 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="BOSCH" id="BOSCH" checked>
+                <label for="BOSCH">BOSCH</label>
+              </li>
+              <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Interskol" id="Interskol">
+                <label for="Interskol">ИНТЕРСКОЛ</label>
+              </li>
+              <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="MAKIta" id="MAKIta" checked>
+                <label for="MAKIta">MAKIta</label>
+              </li>
+              <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="Dewalt">
+                <label for="Dewalt">Dewalt</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="Hitachi">
+                <label for="Hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+            <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accumulator" id="accumulator" checked>
+              <label for="accumulator">Аккумуляторные</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="networking" id="networking">
+              <label for="networking">Сетевые</label>
+            </li>
+            </ul>
+          </fieldset>
+
+          <button type="submit">
+            Показать
+          </button>
+
+        </form>
       </section>
 
        <section class="catalog">
@@ -229,6 +275,14 @@
      </div>
 
    </footer>
+
+   <!--POPUP-------------------------------------------->
+   <div class="popup input-basket">
+     <p>Товар добавлен в корзину!</p>
+     <a href="#">Оформить заказ</a>
+     <button type="button">Продолжить покупки</button>
+     <button class="visually-hidden" type="button">Закрыть</button>
+   </div>
 
    </body>
    </html>
