@@ -70,7 +70,8 @@
     </header>
 
      <!--MAIN-------------------------------------------->
-    <main class="container">
+    <main>
+      <div class="container">
 
       <ul class="breadcrumbs">
         <li><a href=#>Каталог</a></li>
@@ -87,36 +88,50 @@
               <legend>Производители:</legend>
               <ul>
                 <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="BOSCH" id="BOSCH" checked>
-                  <label for="BOSCH">BOSCH</label>
+                  <label class="filter-input filter-input-checkbox">BOSCH
+                    <input class="visually-hidden" type="checkbox" name="BOSCH" checked>
+                    <span class="checkbox-indicator"></span>
+                  </label>
                 </li>
                 <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Interskol" id="Interskol">
-                  <label for="Interskol">ИНТЕРСКОЛ</label>
+                  <label class="filter-input filter-input-checkbox">ИНТЕРСКОЛ
+                    <input class="visually-hidden" type="checkbox" name="Interskol" id="Interskol">
+                    <span class="checkbox-indicator"></span>
+                  </label>
                 </li>
                 <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="MAKIta" id="MAKIta" checked>
-                  <label for="MAKIta">MAKIta</label>
+                  <label class="filter-input filter-input-checkbox">MAKIta
+                    <input class="visually-hidden" type="checkbox" name="MAKIta" checked>
+                    <span class="checkbox-indicator"></span>
+                  </label>
                 </li>
                 <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="Dewalt">
-                  <label for="Dewalt">Dewalt</label>
+                  <label class="filter-input filter-input-checkbox">Dewalt
+                    <input class="visually-hidden" type="checkbox" name="Dewalt">
+                    <span class="checkbox-indicator"></span>
+                  </label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="Hitachi">
-                  <label for="Hitachi">Hitachi</label>
+                  <label class="filter-input filter-input-checkbox">Hitachi
+                    <input class="visually-hidden" type="checkbox" name="Hitachi">
+                    <span class="checkbox-indicator"></span>
+                  </label>
                 </li>
               </ul>
 
               <legend>Питание:</legend>
               <ul>
               <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accumulator" id="accumulator" checked>
-                <label for="accumulator">Аккумуляторные</label>
+                <label class="filter-input filter-input-radio">Аккумуляторные
+                  <input class="visually-hidden" type="radio" name="product-group" value="accumulator" checked>
+                  <span class="radio-indicator"></span>
+                </label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="networking" id="networking">
-                <label for="networking">Сетевые</label>
+                <label class="filter-input filter-input-radio">Сетевые
+                  <input class="visually-hidden" type="radio" name="product-group" value="networking">
+                  <span class="radio-indicator"></span>
+                </label>
               </li>
               </ul>
 
@@ -170,6 +185,7 @@
               <h3>
                 <a href="catalog-item.html">Перфоратор BOSH BFG 2000</a>
               </h3>
+              <p class="old-price"></p>
               <span class="new-price">12500 P.</span>
             </li>
 
@@ -209,6 +225,7 @@
               <h3>
                 <a href="catalog-item.html">Перфоратор BOSH BFG 2000</a>
               </h3>
+              <p class="old-price"></p>
               <span class="new-price">12500 P.</span>
             </li>
 
@@ -248,6 +265,7 @@
               <h3>
                 <a href="catalog-item.html">Перфоратор BOSH BFG 2000</a>
               </h3>
+              <p class="old-price"></p>
               <span class="new-price">12500 P.</span>
             </li>
           </div>
@@ -265,14 +283,16 @@
       </section>
 
     </div>
+    </div>
 
       <section class="information-about-products">
+        <div class="information-about-products-wrapper">
         <h2>Пара слов о перфораторах</h2>
         <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверствий в кирпиче, бетон и камне.
           Существуют элетромеханические и пневатические перфораторы.Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
           В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
         </p>
-
+        </div>
       </section>
     </main>
 
@@ -354,9 +374,11 @@
    <!--POPUP-------------------------------------------->
    <div class="popup input-basket">
      <p>Товар добавлен в корзину!</p>
-     <a href="#">Оформить заказ</a>
-     <button type="button">Продолжить покупки</button>
-     <button class="modal-close" aria-label="Закрыть" type="button">X</button>
+     <div class="input-basket-button">
+       <button type="button">Оформить заказ</button>
+       <button type="button">Продолжить покупки</button>
+     </div>
+     <button class="popup-close" aria-label="Закрыть" type="button">X</button>
    </div>
 
    </body>

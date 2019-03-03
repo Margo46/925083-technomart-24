@@ -73,6 +73,93 @@
   <!--MAIN-------------------------------------------->
   <main class="container">
 
+      <section class="sliders">
+      </section>
+
+      <section class="popular-items">
+        <div class="popular-items-head">
+          <h2>Популярные товары:</h2>
+          <a href="#">Все популярные товары</a>
+        </div>
+        <ul class="catalog-list catalog-list-index">
+         <div class="row">
+
+         <li class="catalog-item catalog-item-index">
+           <div class="actions">
+           <a href="#" class="to-buy">Купить</a>
+           <a href="#" class="add-to-bookmark">В закладки</a>
+           </div>
+           <div class="image"><img src="img/Perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 3000"></div>
+           <h3>
+             <a href="catalog-item.html">Перфоратор BOSH BFG 9000</a>
+           </h3>
+           <p class="old-price">32500 P.</p>
+           <span class="new-price">25500 P.</span>
+         </li>
+
+         <li class="catalog-item catalog-item-index">
+           <div class="actions">
+           <a href="#" class="to-buy">Купить</a>
+           <a href="#" class="add-to-bookmark">В закладки</a>
+           </div>
+           <div class="image"><img src="img/Perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 3000"></div>
+           <h3>
+             <a href="catalog-item.html">Перфоратор BOSH BFG 3000</a>
+           </h3>
+           <p class="old-price">22500 P.</p>
+           <span class="new-price">15500 P.</span>
+         </li>
+
+         <li class="catalog-item catalog-item-index">
+           <div class="actions">
+           <a href="#" class="to-buy">Купить</a>
+           <a href="#" class="add-to-bookmark">В закладки</a>
+           </div>
+           <div class="image"><img src="img/Perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 3000"></div>
+           <h3>
+             <a href="catalog-item.html">Перфоратор BOSH BFG 6000</a>
+           </h3>
+           <p class="old-price">30500 P.</p>
+           <span class="new-price">25500 P.</span>
+         </li>
+
+         <li class="catalog-item catalog-item-index">
+           <div class="flag flag-new">новинка</div>
+           <div class="actions">
+           <a href="#" class="to-buy">Купить</a>
+           <a href="#" class="add-to-bookmark">В закладки</a>
+           </div>
+           <div class="image"><img src="img/Perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSH BFG 3000"></div>
+           <h3>
+             <a href="catalog-item.html">Перфоратор BOSH BFG 2000</a>
+           </h3>
+           <p class="old-price"></p>
+           <span class="new-price">12500 P.</span>
+         </li>
+
+       </ul>
+      </section>
+
+      <section class="popular-producers">
+        <div class="popular-producers-head">
+          <h2>Популярные производители:</h2>
+          <a href="#">Все производители</a>
+        </div>
+        <ul class="popular-producers-list">
+          <li class="popular-producers-item"><img src="img/bosch.png" alt="BOSCH" width="126" height="37"></li>
+          <li class="popular-producers-item"><img src="img/makita.png" alt="Makita" width="123" height="40"></li>
+          <li class="popular-producers-item"><img src="img/dewalt.png" alt="DeWALT" width="146" height="44"></li>
+          <li class="popular-producers-item"><img src="img/интерскол.png" alt="Интерскол" width="200" height="88"></li>
+          <li class="popular-producers-item"><img src="img/hitachi.png" alt="Hitachi" width="169" height="31"></li>
+          <li class="popular-producers-item"><img src="img/lg.png" alt="LG" width="121" height="73"></li>
+          <li class="popular-producers-item"><img src="img/aeg.png" alt="AEG" width="151" height="96"></li>
+          <li class="popular-producers-item"><img src="img/metabo.png" alt="Metabo" width="204" height="69"></li>
+        <ul>
+      </section>
+
+      <section class="service">
+      </section>
+
       <section class="about-company">
         <div class="about-company-advantage">
           <h2>Компания "Техномарт"</h2>
@@ -165,11 +252,11 @@
         </div>
 
         <div class="footer-feedback">
-          <div clas="footer-feedback-left">
+          <div class="footer-feedback-left">
             <b>Обратная связь:</b>
             <a class="btn-footer-feedback" href=#>mail@htmlacademy.ru</a>
           </div>
-          <div clas="footer-feedback-right">
+          <div class="footer-feedback-right">
             <b>Разработано -</b>
             <a class="btn-footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </div>
@@ -181,36 +268,33 @@
   </footer>
 
   <!--POPUP-------------------------------------------->
-
-  <div class="popup map">
-    <img src="img/map-big.jpg" width="970" height="476" alt="г. Санкт-Петербург, Большая Конюшенная ул, 19/18">
-    <button class="modal-close" aria-label="Закрыть" type="button">
-      <img src="img/close.svg" alt="Закрыть" width="11" height="1">
-    </button>
-  </div>
-
-
-  <div class="popup write-us">
+  <div class="popup popup-write-us">
     <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-      <p class="form-write-us-item">
-        <label for="form-write-name">Ваше имя:</label>
-        <input type="text" id="form-write-name" name="name" value="" placeholder="Имя Фамилия">
-      </p>
-      <p class="form-write-us-item">
-        <label for="form-write-email">Ваш e-mail:</label>
-        <input type="text" id="form-write-email" name="email" value="" placeholder="email@example.com">
-      </p>
-      <p class="form-write-us-item">
-        <label for="form-write-text">Текст письма:</label>
-        <textarea id="form-write-text" name="text" placeholder="В свободной форме"></textarea>
-      </p>
-      <button type="submit">Отправить</button>
-
+        <div class="write-us-name-email">
+          <p class="form-write-us-item">
+            <label for="form-write-name">Ваше имя:</label>
+            <input type="text" id="form-write-name" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="form-write-us-item">
+            <label for="form-write-email">Ваш e-mail:</label>
+            <input type="text" id="form-write-email" name="email" value="" placeholder="email@example.com">
+          </p>
+        </div>
+        <p class="form-write-us-item-text">
+          <label for="form-write-text">Текст письма:</label>
+          <textarea id="form-write-text" name="text" placeholder="В свободной форме"></textarea>
+        </p>
+          <button class="write-us-submit" type="submit">Отправить</button>
     </form>
 
-    <button class="modal-close" aria-label="Закрыть" type="button">
-      X
-    </button>
+      <button class="popup-close" aria-label="Закрыть" type="button">
+        Закрыть
+      </button>
+  </div>
+
+  <div class="popup popup-map">
+    <img src="img/map-big.jpg" width="940" height="446" alt="г. Санкт-Петербург, Большая Конюшенная ул, 19/18">
+    <button class="popup-close" aria-label="Закрыть" type="button">Закрыть</button>
   </div>
 
 </body>
