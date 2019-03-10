@@ -50,7 +50,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
             <p>Войти</p>
             </a></li>
-          <li><a class="registration" href=#>Регистрация</a></li>
+          <li><a class="registration" href=#><p>Регистрация</p></a></li>
         </ul>
       </div>
 
@@ -74,6 +74,51 @@
   <main class="container">
 
       <section class="sliders">
+
+        <div class="mini-sliders">
+
+          <div class="mini-slider mini-slider-materials">
+            <div class="flag flag-new">новинка</div>
+            <a href="#">Материалы</a>
+            <span>На любой вкус</span>
+
+          </div>
+
+          <div class="mini-slider mini-slider-instrument">
+            <a href="#">Инструмент</a>
+            <span>На все случаи</span>
+          </div>
+
+          <div class="mini-slider mini-slider-technique">
+            <a href="#">Техника</a>
+            <span>Для стройки</span>
+          </div>
+
+        </div>
+
+        <div class="big-sliders">
+
+          <div class="big-sliders-left">
+            <p>Дрели</p>
+            <span>Соседям на радость!</span>
+            <a href="#">Открыть каталог</a>
+          </div>
+
+          <div class="big-sliders-right">
+            <div class="mini-slider mini-slider-sales">
+              <a href="#">Скидки 50%</a>
+              <span>На 350 товаров</span>
+            </div>
+
+            <div class="mini-slider mini-slider-delivery">
+              <a href="#">Доставка</a>
+              <span>Бесплатно</span>
+            </div>
+
+          </div>
+
+        <div>
+
       </section>
 
       <section class="popular-items">
@@ -184,9 +229,10 @@
           <p>
             Вы можете забрать товар сами,<br> заехав в наш офис:
           </p>
-          <img src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, Большая Конюшенная ул, 19/18">
-
-          <button class="btn-red" type="button">Заблудились? Напишите нам!</button>
+          <a class="btn-map" href="#">
+            <img src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, Большая Конюшенная ул, 19/18">
+          </a>
+          <a class="btn-red btn-contacts" href=#>Заблудились? Напишите нам!</a>
         </div>
       </section>
 
@@ -293,9 +339,11 @@
   </div>
 
   <div class="popup popup-map">
-    <img src="img/map-big.jpg" width="940" height="446" alt="г. Санкт-Петербург, Большая Конюшенная ул, 19/18">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123625!2d30.3208946155902!3d59.93879686904851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1552209770675" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
     <button class="popup-close" aria-label="Закрыть" type="button">Закрыть</button>
   </div>
+
+<script src="js/script.js"></script>
 
 </body>
 
