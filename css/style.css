@@ -48,6 +48,10 @@ img {
   background-color: #f3f7f8;
 }
 
+.header-main-catalog {
+  margin-bottom: 0;
+}
+
 .header-user-wrapper {
   width: 100%;
   min-height: 42px;
@@ -634,43 +638,106 @@ img {
   background-position: 0 0;
 }
 
+.big-sliders-left-wrapper {
+  width: 620px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
 .big-sliders {
   display: flex;
   width: 940px;
   margin-bottom: 50px;
 }
 
-.big-sliders-left {
-  width: 620px;
-  height: 266px;
-  margin-right: 20px;
+.slider-controls {
+  position: relative;
+}
 
-  background-image: url("../img/slider-men-with-drill.jpg");
+.slider-controls label::after {
+  content: "";
+  position: absolute;
+  top: 115px;
+  left: 580px;
+
+  width: 22px;
+  height: 40px;
+
+  background-image: url("../img/icon-right.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider-controls label::before {
+  content: "";
+  position: absolute;
+  top: 115px;
+  left: 25px;
+
+  width: 22px;
+  height: 40px;
+
+  background-image: url("../img/icon-left.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider-radio {
+  position: relative;
+}
+
+.slider-radio input[type="radio"] {
+  display: none;
+}
+
+#btn-1:checked ~ .big-sliders-left-wrapper .big-sliders-left {
+  transform: translate(0);
+}
+
+#btn-2:checked ~ .big-sliders-left-wrapper .big-sliders-left {
+  transform: translate(-620px);
+}
+
+.big-sliders-left {
+  position: relative;
+  width: 200%;
+  margin-right: 20px;
+
+}
+
+.big-sliders-left img {
+  float: left;
+  width: 620px;
+  height: 266px;
 }
 
 .big-sliders-left p {
+  position: absolute;
+  top: 25px;
+  left: 20px;
   font-size: 36px;
   line-height: 36px;
 
   padding: 0;
   margin: 0;
-  margin-left: 20px;
-  margin-top: 25px;
 
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .big-sliders-left span {
+  position: absolute;
+  top: 65px;
+  left: 20px;
   font-size: 18px;
   line-height: 24px;
 
   padding: 0;
   margin: 0;
-  margin-left: 20px;
-  margin-top: 25px;
 
   color: #ffffff;
 }
@@ -760,9 +827,11 @@ img {
 }
 
 .big-sliders-left a {
+  position: absolute;
+  top: 205px;
+  left: 25px;
+
   width: 195px;
-  margin-top: 125px;
-  margin-left: 25px;
 }
 
 .popular-producers-list {
